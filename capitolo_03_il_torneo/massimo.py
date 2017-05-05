@@ -17,7 +17,7 @@ def massimo(insieme):
 
     # fa variare i da 1 a n-1
     for i in range(1, n):
-        if (insieme[i] > max_val):
+        if insieme[i] > max_val:
             max_val = insieme[i]
 
     print "l'elemento massimo e' %d" % max_val

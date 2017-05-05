@@ -16,13 +16,12 @@ def fusione(a, b):
     :return: f e' la sequenza ordinata contenente gli elementi di a unito b.
     """
 
-    n = len(a)  # n indica il numero di elementi di a
-    m = len(b)  # m indica il numero di elementi di b
+    m = len(a)  # n indica il numero di elementi di a e b
 
-    f = [None] * (n + m)  # inizializza il vettore ausiliario f
+    f = [None] * (m + m)  # inizializza il vettore ausiliario f
     i = j = k = 0
 
-    while (i < n) and (j < m):
+    while (i < m) and (j < m):
         if a[i] <= b[j]:  # il minore e' a[i]
             f[k] = a[i]
             i = i + 1
@@ -31,7 +30,7 @@ def fusione(a, b):
             j = j + 1
         k = k + 1
 
-    while i < n:
+    while i < m:
         f[k] = a[i]
         i = i + 1
         k = k + 1

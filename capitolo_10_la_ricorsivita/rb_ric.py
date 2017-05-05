@@ -17,16 +17,13 @@ def rb_ric(insieme, i, j, dato):
     :param dato: dato da cercare
     """
 
-    # n indica il numero di elementi di insieme
-    n = len(insieme)
-
-    if (i > j):
+    if i > j:
         print "\n %s non e' presente" % dato
         return
 
     m = int(math.floor((i + j) / 2))
 
-    if (dato == insieme[m]):
+    if dato == insieme[m]:
         print "\n %s e' presente" % dato
         return
     elif dato < insieme[m]:

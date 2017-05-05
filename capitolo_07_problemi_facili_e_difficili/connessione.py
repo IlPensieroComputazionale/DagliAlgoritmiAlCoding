@@ -40,7 +40,8 @@ def connessione(M):
 def main():
 
     # Ricordarsi che il grafo deve essere non orientato
-    #   e quindi le matrici M1 e M2 devono essere simmetriche
+    # e quindi le matrici M1 e M2 devono essere simmetriche
+
     M1 = np.asmatrix([
         [0, 1, 1, 0],
         [1, 0, 0, 0],

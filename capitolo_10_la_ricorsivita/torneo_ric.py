@@ -20,14 +20,14 @@ def torneo_ric(insieme, i, j):
     """
 
     if j == i + 1:                       # situazione limite con due giocatori
-        if (insieme[i] > insieme[j]):
+        if insieme[i] > insieme[j]:
             return insieme[i]
         else:
             return insieme[j]
 
     m = int(math.floor((i + j) / 2))
-    v1 = torneo_ric(insieme, i, m)      # v1 e' il vincitore del primo sotto-torneo
-    v2 = torneo_ric(insieme, m + 1, j)      # v2 e' il vincitore del primo sotto-torneo
+    v1 = torneo_ric(insieme, i, m)          # v1 e' il vincitore del primo sotto-torneo
+    v2 = torneo_ric(insieme, m + 1, j)      # v2 e' il vincitore del secondo sotto-torneo
 
     if v1 > v2:
         return v1

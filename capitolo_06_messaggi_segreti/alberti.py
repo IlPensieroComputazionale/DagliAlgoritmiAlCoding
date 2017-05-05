@@ -4,7 +4,7 @@
 # Edito da Il Mulino
 
 
-def cifra():
+def alberti():
     """
     Trasforma un messaggio nel relativo crittogramma
     applicando il metodo di Leon Battista Alberti, 
@@ -24,9 +24,9 @@ def cifra():
     crt = [' '] * 140                              # crt e' un vettore di 140 caratteri contenente il crittogramma
 
     for h in range(0, 140):
-        if (h < len(msg)) and (msg[h] in esterno):
+        if h < len(msg):
             i = 0
-            while (msg[h] != esterno[i]):            # cerca msg[h] in esterno
+            while msg[h] != esterno[i]:            # cerca msg[h] in esterno
                 i = i + 1
             j = (i + k) % 26                       # ora msg[h] = esterno[i]
             crt[h] = interno[j]
@@ -38,7 +38,7 @@ def cifra():
 
 def main():
 
-    cifra()
+    alberti()
 
 
 if __name__ == "__main__":

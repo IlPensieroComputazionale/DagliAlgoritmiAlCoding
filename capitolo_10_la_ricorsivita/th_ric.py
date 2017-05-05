@@ -29,6 +29,11 @@ def main():
     b = []
     c = []
 
+    print a
+    print b
+    print c
+    print ''
+
     th_ric(4, a, b, c)
 
     print a

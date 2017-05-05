@@ -21,8 +21,10 @@ def th_iter(n, p):
 
         print iter_index, p[0], p[1], p[2]
 
+        # sposta il 1 disco
         p[(k + 1) % 3].append(p[k].pop())
 
+        # esegue lo spostamento possibile di un disco tra i rimanenti pioli
         if (len(p[k]) > 0) and (len(p[(k + 2) % 3]) > 0):
             if p[k][-1] < p[(k + 2) % 3][-1]:
                 p[(k + 2) % 3].append(p[k].pop())

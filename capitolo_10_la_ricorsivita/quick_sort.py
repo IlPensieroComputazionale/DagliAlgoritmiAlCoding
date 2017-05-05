@@ -23,7 +23,7 @@ def partizione(c, p, q):
 
     i = p - 1
     for j in range(p, q):
-        if (c[j] <= c[q]):
+        if c[j] <= c[q]:
             i = i + 1
             if i < j:
                 c[i], c[j] = c[j], c[i]

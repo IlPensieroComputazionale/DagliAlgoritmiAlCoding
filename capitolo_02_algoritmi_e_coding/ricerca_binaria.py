@@ -22,19 +22,19 @@ def ricerca_binaria(insieme, dato):
     i = 0
     j = n - 1
 
-    while (i <= j):
+    while i <= j:
         # math.floor() restituisce l'intero <= x piu' vicino a x
         # int() rimuove la virgola
         # m e' la posizione centrale tra i e j
 
         m = int(math.floor((i + j) / 2))
 
-        if (dato == insieme[m]):
+        if dato == insieme[m]:
             print "%s e' presente" % dato
             return
-        if (dato < insieme[m]):
+        if dato < insieme[m]:
             j = m - 1
-        if (insieme[m] < dato):
+        if insieme[m] < dato:
             i = m + 1
 
     print "%s non e' presente" % dato

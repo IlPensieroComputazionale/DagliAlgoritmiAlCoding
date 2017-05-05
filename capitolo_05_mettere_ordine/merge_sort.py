@@ -38,12 +38,12 @@ def merge_sort(c):
                     j = j + 1
                 k = k + 1
 
-            while (i < a + 2**(r-1)):
+            while i < a + 2**(r-1):
                 f[k] = c[i]
                 i = i + 1
                 k = k + 1
 
-            while (j < b + 2**(r-1)):
+            while j < b + 2**(r-1):
                 f[k] = c[j]
                 j = j + 1
                 k = k + 1

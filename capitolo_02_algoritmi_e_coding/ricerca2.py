@@ -15,8 +15,8 @@ def ricerca2(insieme, info, dato):
     n = len(insieme)       # n indica il numero di elementi di insieme
 
     i = 0
-    while (i <= n - 1):
-        if (insieme[i] == dato):
+    while i <= n - 1:
+        if insieme[i] == dato:
             print "l'informazione di %s e' %s" % (dato, info[i])
             return
         else:
