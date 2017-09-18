@@ -11,4 +11,6 @@ Esiste anche un modo più semplice e immediato per eseguire la miaggior parte di
 
 Gli algoritmi possono essere eseguiti anche sul proprio computer scaricando il software Anaconda con Python 2.7 alla pagina https://www.continuum.io/downloads. I dettagli vengono forniti nel tutorial *Tutorial Anaconda.pdf*
 
+Una *errata corrige* del libro è disponibile a questo <a href="https://docs.google.com/document/d/1DZ42CfoWKbM6OdFXCNW9L2HMJ7ODZYhPkaAuDXDzt_s/edit?usp=sharing">link</a>.
+
 Gli autori ringraziano <a href="http://kdd.isti.cnr.it/people/riccardo-guidotti">Riccardo Guidotti</a> per aver contribuito alla realizzazione di questo sito e all’implementazione dei programmi Python in esso contenuti.
